@@ -2461,6 +2461,31 @@ textarea.form-control {
     justify-content: center;
   }
 
+  .inner-page-hero {
+    padding: clamp(36px, 6vh, 48px) 5% clamp(24px, 4vh, 36px);
+  }
+
+  .inner-hero-content h1 {
+    font-size: clamp(28px, 7.5vw, 42px);
+    line-height: 1.15;
+  }
+
+  .inner-hero-content p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .careers-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 28px;
+  }
+
+  .careers-contact-box {
+    padding: clamp(20px, 4vw, 30px);
+  }
+
   .form-control,
   input.form-control,
   textarea.form-control {
@@ -2490,6 +2515,14 @@ textarea.form-control {
 }
 
 @media (max-width: 480px) {
+  .inner-page-hero {
+    padding: 28px 4% 20px;
+  }
+
+  .inner-hero-content h1 {
+    font-size: clamp(24px, 7vw, 32px);
+  }
+
   .hero-visual-wrap {
     max-width: 260px;
     height: 260px;
@@ -2501,6 +2534,38 @@ textarea.form-control {
 
   .hero-headline {
     font-size: clamp(22px, 5.8vw, 28px);
+  }
+
+  .section-block {
+    padding: 38px 4%;
+  }
+
+  .section-header-center {
+    margin-bottom: 24px;
+  }
+
+  .section-header-center h2 {
+    font-size: clamp(22px, 6vw, 28px);
+  }
+
+  .pillar-card {
+    padding: 18px 16px;
+  }
+
+  .tech-card-content {
+    padding: 18px 16px;
+  }
+
+  .future-product-box {
+    padding: 20px 16px;
+  }
+
+  .future-product-box h3 {
+    font-size: 17px;
+  }
+
+  .future-product-box p {
+    font-size: 13px;
   }
 
   .button {
