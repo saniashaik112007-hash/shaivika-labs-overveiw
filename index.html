@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E9">
+  <meta name="description"
+    content="Shaivika Groups presents Shaivika Labs — The AI innovation division where enthusiasm meets technology. Building a collaborative community of developers, AI enthusiasts, designers, and innovators.">
+  <meta name="keywords"
+    content="Shaivika Labs, Shaivika Groups, AI Innovation, Artificial Intelligence, Developer Community, Machine Learning, Computer Vision">
+  <title>Shaivika Labs — Where Enthusiasm Meets Technology | Shaivika Groups</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js for Interactive Visual Core Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Main Application Script -->
+  <script src="script.js" defer></script>
+</head>
+
+<body data-theme="light">
+
+  <!-- ======================================================================
+       NAVBAR
+       ====================================================================== -->
+  <header class="navbar" id="top-navbar">
+    <div class="brand-wrap">
+      <span class="brand-parent">Shaivika Groups Presents</span>
+      <a class="logo" href="index.html" aria-label="Shaivika Labs Home">
+        SHAIVIKA<span>LABS</span><i>.</i>
+      </a>
+    </div>
+
+    <!-- Main Navigation Links -->
+    <nav class="nav-links" id="main-nav" aria-label="Main navigation">
+      <a class="active" href="#hero">Home</a>
+      <a href="#vision">Our Vision</a>
+      <a href="#explore">Areas to Explore</a>
+      <a href="#approach">Future Approach</a>
+      <a href="#future-products">Our Future</a>
+    </nav>
+
+    <!-- Controls: Theme Toggle & Mobile Menu -->
+    <div class="nav-controls">
+      <!-- Theme Switcher (Light Mode default) -->
+      <button class="theme-toggle" id="theme-toggle-btn" aria-label="Switch between light and dark theme">
+        <svg class="theme-icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT CONTAINER
+       ====================================================================== -->
+  <main class="page-shell">
+
+    <!-- ====================================================================
+         HERO SECTION: THE FUTURE STARTS WITH AN IDEA
+         ==================================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-copy animate-on-scroll">
+        <div class="hero-parent-badge">SHAIVIKA GROUPS PRESENTS</div>
+
+        <div class="hero-brand-block">
+          <span class="hero-brand-title">SHAIVIKA LABS</span>
+          <span class="hero-brand-tagline">WHERE ENTHUSIASM MEETS TECHNOLOGY</span>
+        </div>
+
+        <h1 class="hero-headline" aria-label="THE FUTURE STARTS WITH AN IDEA.">
+          <span class="hero-line">THE FUTURE STARTS</span>
+          <span class="hero-line">WITH AN <span class="hero-idea">IDEA.</span></span>
+        </h1>
+
+        <p class="hero-description">
+          We are bringing together curious minds to build, experiment, and shape the next generation of intelligent technology.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#vision" id="hero-explore-btn">
+            EXPLORE OUR VISION <span class="btn-arrow">↗</span>
+          </a>
+          <a class="button button-outline" href="#build-with-us" id="hero-join-btn">
+            BUILD WITH US <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Preparing the platform • Building the developer team from the ground up
+        </div>
+      </div>
+
+      <!-- Hero Centerpiece Visual -->
+      <div class="hero-visual-wrap animate-on-scroll delay-1" id="hero-visual-centerpiece"
+        aria-label="AI Neural Core Centerpiece">
+        <!-- Interactive Canvas Layer -->
+        <div class="hero-canvas-container" id="hero-canvas-wrap"></div>
+
+        <!-- Orbital Rings System -->
+        <div class="hero-orbitals" aria-hidden="true">
+          <div class="orbital-ring orbital-ring-1">
+            <span class="orbital-node"></span>
+          </div>
+          <div class="orbital-ring orbital-ring-2">
+            <span class="orbital-node orbital-node-sub"></span>
+          </div>
+          <div class="orbital-ring orbital-ring-3"></div>
+        </div>
+
+        <!-- Revolving Orbit Elements -->
+        <div class="hero-float-card float-card-mindset" id="orbit-node-mindset">
+          <small>OUR MINDSET</small>
+          <strong>Curiosity → Creation</strong>
+        </div>
+
+        <div class="satellite-badge sat-ai" id="orbit-node-ai">AI & ML</div>
+
+        <div class="hero-float-card float-card-process" id="orbit-node-process">
+          <small>OUR APPROACH</small>
+          <strong>Possibility → Product</strong>
+        </div>
+
+        <div class="satellite-badge sat-vision" id="orbit-node-vision">VISION</div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 01: OUR VISION — WE'RE BUILDING SOMETHING NEW
+         ==================================================================== -->
+    <section class="section-block" id="vision">
+      <div class="section-grid-2col">
+        <div class="about-copy animate-on-scroll">
+          <span class="eyebrow">01 / OUR VISION</span>
+          <h2>WE'RE BUILDING<br>SOMETHING <span>NEW.</span></h2>
+
+          <p class="about-lead">
+            SHAIVIKA LABS is being developed as an AI innovation and technology platform where a collaborative team of developers, designers, and innovators will explore emerging technologies and develop useful products.
+          </p>
+
+          <p class="about-secondary">
+            This is the beginning of our journey. We have not started developing finished experiments or AI products yet. Instead, we are preparing the platform and bringing together passionate people who want to collaborate, experiment from the ground up, and turn ambitious concepts into real solutions.
+          </p>
+        </div>
+
+        <!-- Vision Visual Card -->
+        <div class="about-visual-card animate-on-scroll delay-2" id="about-card-container">
+          <div class="card-canvas-layer" id="about-canvas-wrap"></div>
+          <div class="card-media-backdrop">
+            <img src="assets/innovation-about.jpg"
+              alt="Architectural composition representing technological exploration and community building" width="600"
+              height="450" loading="lazy">
+          </div>
+
+          <!-- Floating Badge -->
+          <div class="card-badge-pill">
+            <span class="badge-dot"></span> BEGINNING THE JOURNEY
+          </div>
+
+          <div class="card-overlay-badge">
+            <span>CURIOSITY & COLLABORATION</span>
+            <small>Shaivika Groups • Innovation Division</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Three Core Principles -->
+      <div class="pillars-grid">
+        <article class="pillar-card animate-on-scroll">
+          <span class="pillar-num">01 / PRINCIPLE</span>
+          <h3>Stay Curious</h3>
+          <p>Ask better questions, challenge routine assumptions, and explore what emerging technology makes possible.
+          </p>
+        </article>
+
+        <article class="pillar-card animate-on-scroll delay-1">
+          <span class="pillar-num">02 / PRINCIPLE</span>
+          <h3>Build From The Ground Up</h3>
+          <p>Bring together passionate developers and innovators to shape our collaborative culture and platform together.</p>
+        </article>
+
+        <article class="pillar-card animate-on-scroll delay-2">
+          <span class="pillar-num">03 / PRINCIPLE</span>
+          <h3>Focus on Useful Products</h3>
+          <p>Channel curiosity and experimentation toward solving real-world challenges and building genuinely meaningful products.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 02: AREAS WE WANT TO EXPLORE — WHERE IDEAS MEET TECHNOLOGY
+         ==================================================================== -->
+    <section class="section-block" id="explore">
+      <div class="section-header-center animate-on-scroll">
+        <span class="eyebrow">02 / FUTURE AREAS OF INTEREST</span>
+        <h2>WHERE IDEAS MEET <span>TECHNOLOGY.</span></h2>
+        <p>
+          As our collaborative team grows, SHAIVIKA LABS intends to explore key technology areas where intelligent algorithms, creative engineering, and curious minds intersect. These represent our future areas of interest.
+        </p>
+      </div>
+
+      <!-- Unified 4-Card Equal-Sized Grid: Future Areas of Interest -->
+      <div class="tech-cards-grid">
+        <!-- Card 1: AI & Machine Learning -->
+        <article class="tech-card animate-on-scroll" id="ai-card-container">
+          <div class="tech-media-wrap">
+            <div class="card-canvas-layer" id="ai-canvas-wrap"></div>
+            <img src="assets/ai-machine-learning.jpg" alt="Artificial Intelligence and Machine Learning" width="450"
+              height="280" loading="lazy">
+            <div class="card-badge-pill">
+              <span class="badge-dot"></span> FUTURE EXPLORATION
+            </div>
+          </div>
+          <div class="tech-card-content">
+            <div class="tech-tag-row">
+              <span class="tech-pill">NEURAL MODELS</span>
+              <span class="tech-pill">PATTERN DISCOVERY</span>
+            </div>
+            <h3>AI & Machine Learning</h3>
+            <p>
+              Investigating foundational machine learning architectures, statistical prediction frameworks, and adaptive neural models that uncover patterns in complex data.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Generative AI & AI Agents -->
+        <article class="tech-card animate-on-scroll delay-1" id="de-card-container">
+          <div class="tech-media-wrap">
+            <div class="card-canvas-layer" id="de-canvas-wrap"></div>
+            <img src="assets/digital-engineering.jpg" alt="Generative AI and AI Agents" width="450"
+              height="280" loading="lazy">
+            <div class="card-badge-pill">
+              <span class="badge-dot"></span> FUTURE EXPLORATION
+            </div>
+          </div>
+          <div class="tech-card-content">
+            <div class="tech-tag-row">
+              <span class="tech-pill">AUTONOMOUS AGENTS</span>
+              <span class="tech-pill">GENERATIVE WORKFLOWS</span>
+            </div>
+            <h3>Generative AI & AI Agents</h3>
+            <p>
+              Exploring autonomous reasoning agents, multi-agent coordination, large language models, and generative systems that empower human creativity and workflows.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3: Computer Vision -->
+        <article class="tech-card animate-on-scroll delay-2" id="cv-card-container">
+          <div class="tech-media-wrap">
+            <div class="card-canvas-layer" id="cv-canvas-wrap"></div>
+            <img src="assets/computer-vision.jpg" alt="Computer Vision and Spatial Perception" width="450"
+              height="280" loading="lazy">
+            <div class="card-badge-pill">
+              <span class="badge-dot"></span> FUTURE EXPLORATION
+            </div>
+          </div>
+          <div class="tech-card-content">
+            <div class="tech-tag-row">
+              <span class="tech-pill">SPATIAL AI</span>
+              <span class="tech-pill">VISUAL PERCEPTION</span>
+            </div>
+            <h3>Computer Vision</h3>
+            <p>
+              Investigating spatial recognition, object detection, visual boundary comprehension, and multi-layered image understanding environments.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 4: Automation & Emerging Technologies -->
+        <article class="tech-card animate-on-scroll delay-3" id="emerging-card-container">
+          <div class="tech-media-wrap">
+            <div class="card-canvas-layer" id="emerging-canvas-wrap"></div>
+            <img src="assets/ai-neural-core.jpg" alt="Automation and Emerging Technologies" width="450" height="280"
+              loading="lazy">
+            <div class="card-badge-pill">
+              <span class="badge-dot"></span> FUTURE EXPLORATION
+            </div>
+          </div>
+          <div class="tech-card-content">
+            <div class="tech-tag-row">
+              <span class="tech-pill">AUTOMATED PIPELINES</span>
+              <span class="tech-pill">FRONTIER TECH</span>
+            </div>
+            <h3>Automation & Emerging Technologies</h3>
+            <p>
+              Exploring intelligent automated workflows, ambient computing, and frontier technology architectures designed to solve real-world problems.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 03: OUR FUTURE APPROACH — FROM POSSIBILITY TO PRODUCT
+         ==================================================================== -->
+    <section class="section-block" id="approach">
+      <div class="section-header-center animate-on-scroll">
+        <span class="eyebrow">03 / OUR INTENDED JOURNEY</span>
+        <h2>FROM POSSIBILITY TO <span>PRODUCT.</span></h2>
+        <p>
+          Our planned development journey to transform curiosity and ambitious ideas into useful, well-crafted products as projects begin.
+        </p>
+      </div>
+
+      <div class="approach-pathway-wrap">
+        <div class="pathway-line" aria-hidden="true">
+          <div class="pathway-pulse"></div>
+        </div>
+
+        <div class="pathway-grid">
+          <!-- 01 Bring People Together -->
+          <div class="pathway-step animate-on-scroll">
+            <div class="pathway-node-marker">01</div>
+            <h3>Bring People Together</h3>
+            <p>Build a collaborative team of developers, AI enthusiasts, designers, and innovators from the ground up.</p>
+          </div>
+
+          <!-- 02 Explore Ideas -->
+          <div class="pathway-step animate-on-scroll delay-1">
+            <div class="pathway-node-marker">02</div>
+            <h3>Explore Ideas</h3>
+            <p>Identify meaningful problems, investigate possible solutions, and examine where intelligent technology creates real value.</p>
+          </div>
+
+          <!-- 03 Experiment and Build -->
+          <div class="pathway-step animate-on-scroll delay-2">
+            <div class="pathway-node-marker">03</div>
+            <h3>Experiment and Build</h3>
+            <p>Develop prototypes, test new approaches, and explore algorithms hands-on as projects begin.</p>
+          </div>
+
+          <!-- 04 Improve and Validate -->
+          <div class="pathway-step animate-on-scroll delay-3">
+            <div class="pathway-node-marker">04</div>
+            <h3>Improve and Validate</h3>
+            <p>Evaluate prototypes, gather constructive feedback, refine architectures, and validate solutions.</p>
+          </div>
+
+          <!-- 05 Launch Useful Products -->
+          <div class="pathway-step animate-on-scroll delay-4">
+            <div class="pathway-node-marker">05</div>
+            <h3>Launch Useful Products</h3>
+            <p>Publish successful projects and tools when they are thoroughly tested and ready for the world.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="showcase-footnote">
+        * These represent the planned stages of our future development journey, not completed achievements.
+      </p>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 04: BUILD SHAIVIKA LABS WITH US
+         ==================================================================== -->
+    <section class="section-block join-section" id="build-with-us">
+      <div class="join-heroic-card animate-on-scroll" id="join-card-container">
+        <div class="join-content">
+          <span class="join-eyebrow">04 / JOIN THE COMMUNITY</span>
+          <h2 class="join-heading">
+            YOU CAN HELP BUILD<br>
+            <span>WHAT COMES NEXT.</span>
+          </h2>
+
+          <p class="join-copy">
+            SHAIVIKA LABS is at the beginning of its journey. We are looking for passionate people who want to contribute their skills, collaborate with others, explore new technologies, and help shape our future.
+          </p>
+
+          <!-- 8 Potential Contributor Areas Grid -->
+          <div class="contributor-roles-grid">
+            <div class="contributor-role-card">
+              <span class="role-icon">🧠</span>
+              <span class="role-title">AI / ML Developers</span>
+            </div>
+            <div class="contributor-role-card">
+              <span class="role-icon">⚡</span>
+              <span class="role-title">Generative AI Enthusiasts</span>
+            </div>
+            <div class="contributor-role-card">
+              <span class="role-icon">💻</span>
+              <span class="role-title">Frontend Developers</span>
+            </div>
+            <div class="contributor-role-card">
+              <span class="role-icon">⚙️</span>
+              <span class="role-title">Backend Developers</span>
+            </div>
+            <div class="contributor-role-card">
+              <span class="role-icon">🚀</span>
+              <span class="role-title">Full Stack Developers</span>
+            </div>
+            <div class="contributor-role-card">
+              <span class="role-icon">👁️</span>
+              <span class="role-title">Computer Vision Enthusiasts</span>
+            </div>
+            <div class="contributor-role-card">
+              <span class="role-icon">🎨</span>
+              <span class="role-title">UI/UX Designers</span>
+            </div>
+            <div class="contributor-role-card">
+              <span class="role-icon">🔬</span>
+              <span class="role-title">Tech & Research Enthusiasts</span>
+            </div>
+          </div>
+
+          <div class="join-cta-wrap">
+            <a class="button button-primary" href="careers.html#inquiry-form" data-open-collab-modal id="join-section-cta">
+              EXPLORE COLLABORATION OPPORTUNITIES <span class="btn-arrow">↗</span>
+            </a>
+            <p class="collab-disclaimer">
+              * Shaivika Labs is an innovation initiative currently building its community from the ground up. We do not offer salaried employment or commercial guarantees at this preparatory stage.
+            </p>
+          </div>
+        </div>
+
+        <div class="join-media-wrap">
+          <div class="card-canvas-layer" id="join-canvas-wrap"></div>
+          <img src="assets/shaivika-collaboration.jpg" alt="Shaivika Labs Collaborative Innovation Team" width="680"
+            height="580" loading="lazy">
+          <div class="card-badge-pill">
+            <span class="badge-dot"></span> COMMUNITY COLLABORATION
+          </div>
+          <div class="join-ring-overlay" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 05: OUR FUTURE — THE PRODUCTS WE BUILD TOGETHER
+         ==================================================================== -->
+    <section class="section-block" id="future-products">
+      <div class="section-header-center animate-on-scroll">
+        <span class="eyebrow">05 / THE ROAD AHEAD</span>
+        <h2>THE PRODUCTS WE <span>BUILD TOGETHER.</span></h2>
+      </div>
+
+      <!-- 3 Future Product Philosophy Cards -->
+      <div class="future-products-grid">
+        <article class="future-product-box animate-on-scroll">
+          <span class="future-product-num">PHASE 01 / PROBLEM DISCOVERY</span>
+          <h3>Deciding Together</h3>
+          <p>
+            Rather than top-down directives, our community of developers and innovators will collaboratively explore meaningful industry and societal problems worth solving with intelligent software.
+          </p>
+        </article>
+
+        <article class="future-product-box animate-on-scroll delay-1">
+          <span class="future-product-num">PHASE 02 / PROTOTYPE & VALIDATE</span>
+          <h3>Experiment & Learn</h3>
+          <p>
+            Developers will build lightweight prototypes, validate hypotheses with real user feedback, and test novel AI models hands-on to find what truly works.
+          </p>
+        </article>
+
+        <article class="future-product-box animate-on-scroll delay-2">
+          <span class="future-product-num">PHASE 03 / PURPOSEFUL PRODUCTS</span>
+          <h3>Launch Meaningful Products</h3>
+          <p>
+            When an experiment demonstrates genuine value and reliability, we will engineer and polish it into an official product published under the SHAIVIKA LABS division.
+          </p>
+        </article>
+      </div>
+
+      <!-- Collaborative Invitation Banner -->
+      <div class="future-banner-box animate-on-scroll delay-3">
+        <div class="future-banner-text">
+          <h4>Help Shape Our Product Direction From Day One</h4>
+          <p>
+            Every breakthrough starts with a blank canvas and curious minds. Join as a founding collaborator and have a direct voice in what we build next.
+          </p>
+        </div>
+        <a class="button button-outline" href="#build-with-us" data-open-collab-modal>
+          Join The Journey <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       COLLABORATION INQUIRY MODAL (FRONTEND INTERACTIVE)
+       ====================================================================== -->
+  <div class="collab-modal" id="collab-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="collab-modal-dialog">
+      <button class="collab-close-btn" aria-label="Close collaboration modal">✕</button>
+
+      <span class="eyebrow" style="color: var(--accent); margin-bottom: 8px; display: block;">BUILD SHAIVIKA LABS WITH US</span>
+      <h3 id="modal-title" style="font-size: 24px; margin-bottom: 12px; color: var(--ink);">Explore Collaboration Opportunities</h3>
+      <p style="font-size: 13px; color: var(--muted); margin-bottom: 24px; line-height: 1.7;">
+        SHAIVIKA LABS is preparing its platform and assembling its developer community. Tell us about your background, skills, and how you want to contribute.
+      </p>
+
+      <form id="collab-form" onsubmit="event.preventDefault(); const name=document.getElementById('m-name').value; const email=document.getElementById('m-email').value; const role=document.getElementById('m-role').value; const note=document.getElementById('m-note').value; const mailSubject=encodeURIComponent(`Shaivika Labs Collaboration Inquiry - ${name} (${role})`); const mailBody=encodeURIComponent(`Name: ${name}\nEmail: ${email}\nRole of Interest: ${role}\n\nMessage:\n${note}`); window.location.href=`mailto:hello@shaivikalabs.com?subject=${mailSubject}&body=${mailBody}`; alert('Thank you for your interest! Your email client will open to send your collaboration inquiry.'); document.getElementById('collab-modal').classList.remove('is-open'); document.body.style.overflow='';">
+        <div class="form-group" style="margin-bottom: 16px;">
+          <label class="form-label" for="m-name">Your Full Name</label>
+          <input class="form-control" type="text" id="m-name" required placeholder="e.g. Alex Taylor">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 16px;">
+          <label class="form-label" for="m-email">Your Email Address</label>
+          <input class="form-control" type="email" id="m-email" required placeholder="alex@example.com">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 16px;">
+          <label class="form-label" for="m-role">Area You Want to Contribute In</label>
+          <select class="form-control" id="m-role" required>
+            <option value="AI / ML Developers">AI / ML Developers</option>
+            <option value="Generative AI Enthusiasts">Generative AI Enthusiasts</option>
+            <option value="Frontend Developers">Frontend Developers</option>
+            <option value="Backend Developers">Backend Developers</option>
+            <option value="Full Stack Developers">Full Stack Developers</option>
+            <option value="Computer Vision Enthusiasts">Computer Vision Enthusiasts</option>
+            <option value="UI/UX Designers">UI/UX Designers</option>
+            <option value="Technology and Research Enthusiasts">Technology and Research Enthusiasts</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 22px;">
+          <label class="form-label" for="m-note">What would you like to explore or build?</label>
+          <textarea class="form-control" id="m-note" required placeholder="Share your experience, GitHub/portfolio link, or what technologies excite you..."></textarea>
+        </div>
+
+        <button class="button button-primary" type="submit" style="width: 100%;">
+          Submit Collaboration Inquiry <span class="btn-arrow">↗</span>
+        </button>
+
+        <p style="font-size: 11px; color: var(--muted); margin-top: 14px; text-align: center; line-height: 1.5;">
+          Direct inquiries can also be sent to: <a href="mailto:hello@shaivikalabs.com" style="color: var(--accent); text-decoration: underline;">hello@shaivikalabs.com</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer" id="main-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-parent-label">SHAIVIKA GROUPS PRESENTS</span>
+        <div class="logo">
+          SHAIVIKA<span>LABS</span><i>.</i>
+        </div>
+        <p class="footer-tagline">
+          WHERE ENTHUSIASM MEETS TECHNOLOGY.
+        </p>
+        <a class="footer-official-link" href="http://shaivikaittechnologies.in/" target="_blank"
+          rel="noopener noreferrer">
+          Parent Brand: shaivikaittechnologies.in ↗
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#vision">Our Vision</a></li>
+          <li><a href="#explore">Areas to Explore</a></li>
+          <li><a href="#approach">Future Approach</a></li>
+          <li><a href="#build-with-us">Build With Us</a></li>
+          <li><a href="#future-products">Our Future</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Collaboration</h5>
+        <ul>
+          <li><a href="#build-with-us" data-open-collab-modal>Join as Contributor</a></li>
+          <li><a href="careers.html">Opportunities Page</a></li>
+          <li><a href="mailto:hello@shaivikalabs.com?subject=Shaivika%20Labs%20Collaboration%20Inquiry">Email Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Future Areas of Interest</h5>
+        <ul>
+          <li><a href="#explore">AI & Machine Learning</a></li>
+          <li><a href="#explore">Generative AI & AI Agents</a></li>
+          <li><a href="#explore">Computer Vision</a></li>
+          <li><a href="#explore">Automation & Emerging Tech</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © <span data-year></span> Shaivika Labs. Innovation division of <a href="http://shaivikaittechnologies.in/"
+          target="_blank" rel="noopener noreferrer">Shaivika Groups</a>. All rights reserved.
+      </div>
+      <div>
+        Official Division Reference • Where Enthusiasm Meets Technology
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
